@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/nativedroid2.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <title>Compass Wearable Projects</title>
+</head>
+
+<body>
+    <div class="app">
+        <div data-role="header" data-position="fixed" id="header">
+            <h1>Compass</h1>
+        </div>
+
+        <div id="dataContainer">
+        </div>
+            <div id="compassContainer">
+                <img src="compass.jpg"  id="compass"/>
+            </div>
+        <div id="loadContainer" data-rel="dialog" data-transition="pop">
+            <p id="status" style="display: none;">
+            </p>
+        </div>
+        <div id="buttons">
+        <button id="scanButton" onclick="startBLEScan();" class="ui-btn ui-btn-icon-right ui-btn-raised clr-btn-amber waves-effect waves-button waves-effect waves-button"><i class="zmdi zmdi-bluetooth-search zmdi-hc-2x zmdi-hc-fw"></i> Connect to device</button>
+        <button id="disconnectButtn" style="display:none;"onclick="disconnect();" class="ui-btn ui-btn-icon-right ui-btn-raised clr-btn-amber waves-effect waves-button waves-effect waves-button"> <i class="zmdi zmdi-bluetooth-search zmdi-hc-2x zmdi-hc-fw"></i> Disconnect</button>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/nativedroid2.js"></script>
+    <script src="nd2settings.js"></script>
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</body>
+
+</html>

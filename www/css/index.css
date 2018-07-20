@@ -1,0 +1,79 @@
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+html{
+    height: 100%;
+}
+.app{
+    height: 100%;
+}
+#demo{
+    z-index: 1;
+}
+#leftpanel{
+    z-index: 5;
+    width: 100%;
+}
+#dataContainer{
+    position: absolute;
+    text-align: center;
+    top:14%;
+    color: #FFC107;
+    font-weight: bold;
+    font-size: 2em;
+   width: 100%;
+    text-align: center;
+    margin-bottom:4em;
+    z-index: 1;
+}
+#header{
+    background-color: #607D8B;
+}
+#header>h1{
+    text-align: center;
+}
+
+#compass{
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    width:100%;
+}
+#compassContainer{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    top:5em;
+    z-index:0;
+}
+
+#buttons{
+    position:absolute;
+    z-index: 1;
+    bottom:0;
+    padding-top:10%;
+    width:100%;
+}
+#scanButton,#disconnectButtn{
+    position: absolute;
+    bottom:0;
+    border: solid rgba(96, 125, 139, 0.69) 1px;
+}
+#loadContainer{
+    position:absolute;
+    z-index: 1;
+    top:40%;
+    width: 100%;
+    text-align: center;
+}
+#status{
+    background-color: rgba(96, 125, 139, 0.35);
+    width:50%;
+    margin: auto;
+    color: white;
+    padding:4em;
+   border-radius: 2px;
+    border: solid rgba(96, 125, 139, 0.69) 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
